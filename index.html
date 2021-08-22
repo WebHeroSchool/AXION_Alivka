@@ -7,39 +7,45 @@
 <body>
   <div class="wrapper">
     <header class="header">
-      <div class="header__left">
-        <div class="logo">AXION</div>
-        <nav class="header__menu">
-          <a class="header__link" href="#">Shop</a>
-          <a class="header__link" href="#">News</a>
-          <a class="header__link" href="#">Team</a>
-          <a class="header__link" href="#">Legacy</a>
-          <a class="header__link" href="#">Help</a>
+      <div class="header-left">
+        <div class="logo"><img src="img/logo.svg" alt="Axion"></div>
+        <nav class="menu">
+          <a class="menu__link" href="#">Shop</a>
+          <a class="menu__link" href="#">News</a>
+          <a class="menu__link" href="#">Team</a>
+          <a class="menu__link" href="#">Legacy</a>
+          <a class="menu__link" href="#">Help</a>
         </nav>
+        <div class="burger-menu">
+          <input type="checkbox" id="checkbox"/>
+          <label class="burger-btn" for="checkbox">
+            <span class="burger-line"></span>
+          </label>
+        </div>
       </div>
-      <div class="header__right">
+      <div class="header-right">
         <form class="search" action="search">
           <input id="" class="search__input" type="text" name="" value="">
-          <button class="search__btn"><img src="img/search.png" alt=""></button>
+          <button class="search__btn"><img src="img/search.svg" alt=""></button>
         </form>
-        <a class="header__link" href="#">SIGN IN</a>
-        <a class="header__link" href="#">CART <img src="img/1.png" alt=""></a>
-        <a class="header__link" href="#"><img src="img/united-states.png" alt=""></a>
+        <a class="header-right__link" href="#">SIGN IN</a>
+        <a class="header-right__link" href="#">CART <img src="img/1.svg" alt=""></a>
+        <a class="header-right__link" href="#"><img src="img/united-states.svg" alt=""></a>
       </div>
     </header>
     <section class="banner">
       <img src="img/Banner.png" alt="">
       <h1 class="banner__title">Legendary footwear reborn.</h1>
-      <a class="banner__link" href="">Shop now</a>
+      <a class="banner__link" href="">Shop now<img class="arrow" src="img/arrow.svg" alt=""></a>
     </section>
     <section class="products">
-      <h1 class="products__title">Featured product</h1>
-      <div class="products-swiper">
-        <div class="products-swiper__item">
-          <a class="products-swiper__image" href=""><img src="img/AtlasBlackRastaAxion.png" alt=""></a>
-          <p class="products-swiper__name">Atlas Black/Rasta Axion</p>
-          <div class="products-swiper__pagination">
-            <p class="products-swiper__price">$89.00</p>
+      <h2 class="products-title">Featured product</h2>
+      <div class="products-item">
+        <div class="product">
+          <a class="product-image" href=""><img src="img/atlasBlackRastaAxion.png" alt=""></a>
+          <div class="product-name">Atlas Black/Rasta Axion</div>
+          <div class="product-pagination">
+            <div class="price">$89.00</div>
             <ul class="color-pick">
               <li class="color-pick__grey"></li>
               <li class="color-pick__black"></li>
@@ -48,11 +54,11 @@
             </ul>
           </div>
         </div>
-        <div class="products-swiper__item">
-          <a class="products-swiper__image" href=""><img src="img/CamelChiliPepperAxion.png" alt=""></a>
-          <p class="products-swiper__name">Camel/Chili Pepper Axion</p>
-          <div class="products-swiper__pagination">
-            <p class="products-swiper__price">$74.00</p>
+        <div class="product">
+          <a class="product-image" href=""><img src="img/camelChiliPepperAxion.png" alt=""></a>
+          <div class="product-name">Camel/Chili Pepper Axion</div>
+          <div class="product-pagination">
+            <div class="price">$74.00</div>
             <ul class="color-pick">
               <li class="color-pick__grey"></li>
               <li class="color-pick__orange"></li>
@@ -61,11 +67,11 @@
             </ul>
           </div>
         </div>
-        <div class="products-swiper__item">
-          <a class="products-swiper__image" href=""><img src="img/MandelSmokeRustAxion.png" alt=""></a>
-          <p class="products-swiper__name">Mandel Smoke/Rust Axion</p>
-          <div class="products-swiper__pagination">
-            <p class="products-swiper__price">$69.00</p>
+        <div class="product">
+          <a class="product-image" href=""><img src="img/mandelSmokeRustAxion.png" alt=""></a>
+          <div class="product-name">Mandel Smoke/Rust Axion</div>
+          <div class="product-pagination">
+            <div class="price">$69.00</div>
             <ul class="color-pick">
               <li class="color-pick__grey"></li>
               <li class="color-pick__orange"></li>
@@ -74,11 +80,11 @@
             </ul>
           </div>
         </div>
-        <div class="products-swiper__item">
-          <a class="products-swiper__image" href=""><img src="img/CloudElectricBlueAxion.png" alt=""></a>
-          <p class="products-swiper__name">Cloud/Electric Blue Axion</p>
-          <div class="products-swiper__pagination">
-            <p class="products-swiper__price">$69.00</p>
+        <div class="product">
+          <a class="product-image" href=""><img src="img/cloudElectricBlueAxion.png" alt=""></a>
+          <div class="product-name">Cloud/Electric Blue Axion</div>
+          <div class="product-pagination">
+            <div class="price">$69.00</div>
             <ul class="color-pick">
               <li class="color-pick__grey"></li>
               <li class="color-pick__orange"></li>
@@ -89,51 +95,59 @@
         </div>
       </div>
     </section>
-    <section class="hystory-brand">
-      <div class="hystory-brand__video"><img src="img/Video.png" alt=""></div>
-      <h1 class="hystory-brand__title">Legendary footwear reborn</h1>
-      <p class="hystory-brand__text">We are a brand with a history and are relaunching for 2019. We’ve been a part of the skater’s family ever since it’s early teenage years. And now we presentate a new footwear collection.</p>
-      <a class="hystory-brand__link" href="#">Learn more</a>
+    <section class="video">
+      <div class="video-content"><img src="img/video.png" alt=""></div>
+      <div class="text-content">
+        <h2 class="text-content__title">Legendary footwear reborn</h2>
+        <p class="text-content__description">We are a brand with a history and are relaunching for 2019. We’ve been a part of the skater’s family ever since it’s early teenage years. And now we presentate a new footwear collection.</p>
+        <a class="text-content__link" href="#">Learn more</a>
+        <a class="arrow" href="#"><img class="arrow" src="img/arrow.svg" alt=""></a>
+      </div>
     </section>
     <section class="stories">
-      <h1 class="stories__title">Recent stories</h1>
-      <div class="stories__item">
-        <div class="stories-anagoa">
-          <img src="img/Anagoa.png" alt="">
-          <p class="stories-anagoa__title">Presents Justin Anagoa</p>
-          <p class="stories-anagoa__text">Anagoa’s been a part of the skater’s family ever since his early teenage years. He’s been known to go big on and off the board, but it’s been rare we get a glimpse into how Anagoa lives his day-to-day, to see what makes Anagoa tick.</p>
-          <div class="learn-more">
-            <a class="stories__link" href="#">Learn more</a>
-            <p class="stories__date">11.08.2018</p>
+      <div class="stories__body">
+        <div class="stories__title">Recent stories</div>
+        <div class="stories__row">
+          <div class="stories__column">
+            <div class="item__stories">
+              <div class="item__stories__icon"><img src="img/anagoa.png" alt=""></div>
+              <div class="item__stories__title">Presents Justin Anagoa</div>
+              <div class="item__stories__text">Anagoa’s been a part of the skater’s family ever since his early teenage years. He’s been known to go big on and off the board, but it’s been rare we get a glimpse into how Anagoa lives his day-to-day, to see what makes Anagoa tick.</div>
+              <div class="Learn-more">
+                <a class="item__storieslink" href="#">Learn more<img class="arrow-small" src="img/arrow_small.svg" alt=""></a>
+                <div class="item__stories__date">11.08.2018</div>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="stories__item">
-        <div class="stories-flip">
-          <img src="img/Flip.png" alt="">
-          <p class="stories-anagoa__title">First Frontside flip</p>
-          <p class="stories-anagoa__text">Yoon recently discusses his first time shooting a signature Andrew Reynolds frontside flip on The Berrics. Click the image below to see the full gallery and read up on what happened that day.
-Photo:Yoon Sul</p>
-          <div class="learn-more">
-            <a class="stories__link" href="#">Learn more</a>
-            <p class="stories__date">17.08.2018</p>
+          <div class="stories__column">
+            <div class="item__stories">
+              <div class="item__stories__icon"><img src="img/flip.png" alt=""></div>
+              <div class="item__stories__title">First Frontside flip</div>
+              <div class="item__stories__text">Yoon recently discusses his first time shooting a signature Andrew Reynolds frontside flip on The Berrics. Click the image below to see the full gallery and read up on what happened that day.
+Photo:Yoon Sul</div>
+              <div class="Learn-more">
+                <a class="item__storieslink" href="#">Learn more<img class="arrow-small" src="img/arrow_small.svg" alt=""></a>
+                <div class="item__stories__date">17.08.2018</div>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="stories__item">
-        <div class="stories-baekkel">
-          <img src="img/Baekkel.png" alt="">
-          <p class="stories-anagoa__title">Kevin Baekkel is Pro</p>
-          <p class="stories-anagoa__text">Creature proudly announced today that they’re officially adding Kevin Baekkel to their pro roster. After paying his dues for years, killing it on last years Thrasher King of the Road, and constantly lighting every spot he hits on fire.</p>
-          <div class="learn-more">
-            <a class="stories__link" href="#">Learn more</a>
-            <p class="stories__date">29.07.2018</p>
+          <div class="stories__column">
+            <div class="item__stories">
+              <div class="item__stories__icon"><img src="img/baekkel.png" alt=""></div>
+              <div class="item__stories__title">Kevin Baekkel is Pro</div>
+              <div class="item__stories__text">Yoon recently discusses his first time shooting a signature Andrew Reynolds frontside flip on The Berrics. Click the image below to see the full gallery and read up on what happened that day.
+    Photo:Yoon Sul</div>
+              <div class="Learn-more">
+                <a class="item__storieslink" href="#">Learn more<img class="arrow-small" src="img/arrow_small.svg" alt=""></a>
+                <div class="item__stories__date">29.07.2018</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <section class="slider">
-      <p class="slider__hashtag">#AXIONfootwear</p>
+      <div class="slider__hashtag">#AXIONfootwear</div>
       <div class="slider__foto">
         <img src="img/foto1.png" alt="">
         <img src="img/foto2.png" alt="">
@@ -145,48 +159,46 @@ Photo:Yoon Sul</p>
       </div>
     </section>
     <footer class="footer">
-      <div class="footer__content">
-        <div class="container">
-          <div class="footer__content_account">
-            <p class="footer__content_title">MY ACCOUNT</p>
-            <a class="footer__content_link" href="#">Login</a>
-            <a class="footer__content_link" href="#">Wish List</a>
-            <a class="footer__content_link" href="#">Order History</a>
-            <a class="footer__content_link" href="#">Track order</a>
-            <a class="footer__content_link" href="#">Gift cards</a>
-          </div>
-          <div class="footer__content_service">
-            <p class="footer__content_title">CUSTOMER SERVICE</p>
-            <a class="footer__content_link" href="#">Contact us</a>
-            <a class="footer__content_link" href="#">Help/FAQ</a>
-            <a class="footer__content_link" href="#">Shipping</a>
-            <a class="footer__content_link" href="#">Returns</a>
-            <a class="footer__content_link" href="#">Size guide</a>
-            <a class="footer__content_link" href="#">Holiday shopping</a>
-          </div>
-          <div class="footer__content_miscellaneous">
-            <p class="footer__content_title">MISCELLANEOUS</p>
-            <a class="footer__content_link" href="#">About Us</a>
-            <a class="footer__content_link" href="#">Careers</a>
-            <a class="footer__content_link" href="#">Privacy Policy</a>
-            <a class="footer__content_link" href="#">Terms & Conditions</a>
-            <a class="footer__content_link" href="#">Ethical Policy</a>
-            <a class="footer__content_link" href="#">Homepage US/UK</a>
-          </div>
-          <div class="footer__content_connect">
-            <p class="footer__content_title">NEWSLETTER SIGN UP</p>
-            <p class="footer__content_subtitle">Get 10% Off Your Next Order!</p>
-            <button class="footer__content_btn">SIGN UP</button>
-            <ul class="footer__socials">
-              <li class="footer__socials_item"><a href="#"><img src="img/Fb.png" alt="">Fb</a></li>
-              <li class="footer__socials_item"><a href="#"><img src="img/Twitte.png" alt="">Twitter</a></li>
-              <li class="footer__socials_item"><a href="#"><img src="img/Ig.png" alt="">Ig</a></li>
-              <li class="footer__socials_item"><a href="#"><img src="img/Pinterest.png" alt="">Pinterest</a></li>
-            </ul>
-          </div>
+      <div class="footer-content">
+        <div class="footer__column">
+          <div class="footer__column__title">MY ACCOUNT</div>
+          <a class="footer__column__link" href="#">Login</a>
+          <a class="footer__column__link" href="#">Wish List</a>
+          <a class="footer__column__link" href="#">Order History</a>
+          <a class="footer__column__link" href="#">Track order</a>
+          <a class="footer__column__link" href="#">Gift cards</a>
         </div>
-      <div class="footer__content_copyright">© 2019 Axion. All rights reserved.</div>
+        <div class="footer__column">
+          <div class="footer__column__title">CUSTOMER SERVICE</div>
+          <a class="footer__column__link" href="#">Contact us</a>
+          <a class="footer__column__link" href="#">Help/FAQ</a>
+          <a class="footer__column__link" href="#">Shipping</a>
+          <a class="footer__column__link" href="#">Returns</a>
+          <a class="footer__column__link" href="#">Size guide</a>
+          <a class="footer__column__link" href="#">Holiday shopping</a>
+        </div>
+        <div class="footer__column">
+          <div class="footer__column__title">MISCELLANEOUS</div>
+          <a class="footer__column_link" href="#">About Us</a>
+          <a class="footer__column_link" href="#">Careers</a>
+          <a class="footer__column_link" href="#">Privacy Policy</a>
+          <a class="footer__column_link" href="#">Terms & Conditions</a>
+          <a class="footer__column_link" href="#">Ethical Policy</a>
+          <a class="footer__column_link" href="#">Homepage US/UK</a>
+        </div>
+        <div class="footer__column">
+          <div class="footer__column_title">NEWSLETTER SIGN UP</div>
+          <div class="footer__column_subtitle">Get 10% Off Your Next Order!</div>
+          <button class="footer__column_btn">SIGN UP</button>
+          <ul class="footer__socials">
+            <li class="footer__socials_item"><a href="#"><img src="img/facebook.svg" alt=""></a></li>
+            <li class="footer__socials_item"><a href="#"><img src="img/twitter.svg" alt=""></a></li>
+            <li class="footer__socials_item"><a href="#"><img src="img/instagram.svg" alt=""></a></li>
+            <li class="footer__socials_item"><a href="#"><img src="img/pinterest.svg" alt=""></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-copyright">© 2019 Axion. All rights reserved.</div>
     </footer>
-  </div>
 </body>
 </html>
