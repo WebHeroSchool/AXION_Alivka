@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'GothamProBold';
-  src: url('fonts/GothamProBold.ttf') format('truetype');
+  src: url('GothamProBold.woff') format('woff'), url('fonts/GothamProBold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: 'GothamProRegular';
-  src: url('fonts/GothamProRegular.ttf') format('truetype');
+  src: url('fonts/GothamProRegular.woff') format('woff'), url('fonts/GothamProRegular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
