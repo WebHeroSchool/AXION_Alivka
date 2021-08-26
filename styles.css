@@ -1,3 +1,26 @@
-.menu__link {
+.menu__link,
+.header-right__link,
+.banner__title,
+.banner__link,
+.products-title,
+.price,
+.text-content__title,
+.text-content__link,
+.stories-title,
+.story__title,
+.info__link,
+.info__date,
+.slider__hashtag,
+.footer-column__title,
+.footer-column__btn {
   font-family: GothamProBold;
+}
+
+.product-name,
+.text-content__description,
+.story__text,
+.footer-column__link,
+.footer-column__subtitle,
+.footer-copyright {
+  font-family:GothamProRegular;
 }
