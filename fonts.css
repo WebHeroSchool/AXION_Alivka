@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'GothamProBold';
+  src: url('fonts/GothamProBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GothamProRegular';
+  src: url('fonts/GothamProRegular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
