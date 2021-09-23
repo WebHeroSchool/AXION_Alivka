@@ -1,7 +1,14 @@
-.menu__link,
+body {
+  margin: 0;
+}
+
+.wrapper {
+  margin: auto;
+  width: 88%;
+}
+
 .header-right__link,
 .banner__title,
-.banner__link,
 .products-title,
 .price,
 .text-content__title,
@@ -16,6 +23,7 @@
   font-family: GothamProBold;
 }
 
+.banner__link,
 .product-name,
 .text-content__description,
 .story__text,
@@ -24,8 +32,6 @@
 .footer-copyright {
   font-family:GothamProRegular;
 }
-<<<<<<< Updated upstream
-=======
 
 .header {
   display: flex;
