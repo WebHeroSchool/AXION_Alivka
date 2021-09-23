@@ -1,7 +1,14 @@
-.menu__link,
+body {
+  margin: 0;
+}
+
+.wrapper {
+  margin: auto;
+  width: 88%;
+}
+
 .header-right__link,
 .banner__title,
-.banner__link,
 .products-title,
 .price,
 .text-content__title,
@@ -16,6 +23,7 @@
   font-family: GothamProBold;
 }
 
+.banner__link,
 .product-name,
 .text-content__description,
 .story__text,
@@ -23,4 +31,328 @@
 .footer-column__subtitle,
 .footer-copyright {
   font-family:GothamProRegular;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+.header-left {
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  margin-top: 32px;
+  height: 55px;
+  width: 61px;
+  background-image: url('img/logo.svg');
+  background-repeat: no-repeat;
+}
+.menu {
+  padding: 49px 0 0 39px;
+}
+.menu__link {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding-right: 31px;
+  font: bold 12px/11.48px GothamProBold;
+  color: #000;
+}
+.burger-menu {
+  display: none;
+}
+.header-right {
+  display: flex;
+  justify-content: space-between;
+}
+.search {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 35px;
+  padding-top: 48px;
+  height: 24px;
+  width: 178px;
+  border-bottom: 1px solid #000;
+
+}
+.search__input {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background: none;
+  border: none;
+}
+.search__btn {
+  margin: 5px 0 0 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-image: url('img/search.svg');
+  width: 15px;
+  height: 15px;
+  border: none;
+}
+.header-right__link {
+  padding-top: 52px;
+  text-decoration: none;
+  font: bold 12px/11.48px GothamProBold;
+  color: #000;
+}
+.header-right__link:last-child {
+  margin-right: 0;
+}
+.signin {
+  margin-right: 36px;
+}
+.cart {
+  margin-right: 3px;
+}
+.number {
+  margin-right: 35px;
+  width: 15px;
+  height: 15px;
+}
+
+.banner {
+  background-image: url('img/Banner.png');
+  background-repeat: no-repeat;
+  background-position: center 0;
+  margin-bottom: 53.78px;
+  min-height: 280px;
+}
+.banner__title {
+  margin: 0;
+  padding: 90.87px 775.42px 19px 59.58px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  font-size: 30px;
+  line-height: 28.71px;
+}
+.banner__button {
+  display: flex;
+  justify-content: flex-start;
+}
+.banner__link {
+  margin: 0;
+  padding: 0 6px 0 59.58px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+  line-height: 11.48px;
+}
+.arrow {
+  margin: 0;
+  background-image: url('img/arrow.svg');
+  background-repeat: no-repeat;
+  width: 43px;
+}
+.products {
+  margin-bottom: 54px;
+}
+.products-title {
+  margin: 0;
+  padding-bottom: 19px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 22px;
+  line-height: 20px;
+}
+.products-item {
+  display:flex;
+  justify-content: space-between;
+}
+.product-atlas,
+.product-camel,
+.product-mandel,
+.product-cloud {
+  width: 206px;
+  padding: 0 12px;
+}
+.separator {
+  width: 1px;
+  height: 100px;
+  opacity: .2;
+  background-color: #000;
+  margin-top: 38px;
+}
+.product-image__Atlas,
+.product-image__Camel,
+.product-image__Mandel,
+.product-image__Cloud {
+  margin: 0 0 28px 10px;
+  height: 174px;
+  width: 188px;
+}
+.product-image__Atlas {
+  background-image: url('img/AtlasBlackRastaAxion.png');
+  background-repeat: no-repeat;
+}
+.product-image__Camel {
+  background-image: url('img/CamelChiliPepperAxion.png');
+  background-repeat: no-repeat;
+}
+.product-image__Mandel {
+  background-image: url('img/MandelSmokeRustAxion.png');
+  background-repeat: no-repeat;
+}
+.product-image__Cloud {
+  background-image: url('img/CloudElectricBlueAxion.png');
+  background-repeat: no-repeat;
+}
+.product-name {
+  font-size: 12px;
+  line-height: 11.48px;
+}
+.product-pagination {
+  display:flex;
+  justify-content: space-between;
+}
+.price {
+  margin: 0;
+  padding-top: 7px;
+  font-size: 14px;
+  line-height: 13px;
+}
+.color__option {
+  margin: 0;
+  padding-top: 10px;
+  display:flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.color__option_grey {
+  margin-right: 8px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #C4C4C4;
+}
+.color__option_black {
+  margin-right: 8px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: #0E1211;
+}
+.color__option_red {
+  margin-right: 8px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #B62E3C;
+}
+.color__option_yellow {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #FDB431;
+}
+.color__option_orange {
+  margin-right: 8px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: #E29D69;
+}
+.color__option_brown {
+  margin-right: 8px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: #762E31;
+}
+.color__option_navy {
+  margin-right: 8px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #41479B;
+}
+.color__option_blue {
+  margin-right: 8px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: #257DA9;
+}
+.video {
+  display: flex;
+  justify-content: space-between;
+  background-color: #000;
+  height: 494px;
+}
+.video-content {
+  background-image: url('img/Video.png');
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 1024px) {
+  .wrapper {
+    width: 91%;
+  }
+  .header {
+    margin-bottom: 39px;
+  }
+  .logo {
+    margin: 30px 0 0 1px;
+    height: 60px;
+    background-image: url('img/logo.svg');
+    background-size: 101%;
+  }
+  .menu {
+    padding: 49px 0 0 30px;
+  }
+  .search {
+    margin-right: 32px;
+    width: 160px;
+  }
+  .signin {
+    margin-right: 29px;
+  }
+  .number {
+    margin-right: 25px;
+  }
+  .banner {
+    margin-bottom: 40px;
+    background-size: 100%;
+  }
+  .banner__title {
+    padding: 76px 550px 14px 55px;
+  }
+  .banner__link {
+    padding: 0 12px 0 55px;
+  }
+  .arrow {
+    width: 46px;
+  }
+  .products-title {
+    padding-bottom: 24px;
+  }
+  .product-atlas,
+  .product-camel,
+  .product-mandel,
+  .product-cloud {
+    width: 187px;
+  }
+
+  .product-image__Atlas,
+  .product-image__Camel,
+  .product-image__Mandel,
+  .product-image__Cloud {
+    background-size: 93%;
+    margin: 0 0 24px 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-left,
+  .header-right {
+    display: none;
+  }
+  .logo {
+    display: none;
+  }
 }
